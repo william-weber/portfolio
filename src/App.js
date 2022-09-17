@@ -13,9 +13,9 @@ export default function App() {
       <h1>William Weber</h1>
       <div className="menu">
         <ul>
-          <li>About</li>
-          <li>Portfolio</li>
-          <li>Resume</li>
+          <li><div>About</div><div className="underline">About</div></li>
+          <li><div>Portfolio</div><div className="underline">Portfolio</div></li>
+          <li><div>Resume</div><div className="underline">Resume</div></li>
         </ul>
       </div>
       <Routes>
