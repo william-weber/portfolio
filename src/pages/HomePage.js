@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 
 export default function HomePage() {
   return (
-    <div className="homePage">
+    <div className="homepage">
+      <p>William Weber is a Web Developer from Florida. He particularly likes Ruby, gardening, and writing CSS that feels nice.</p>
     </div>
   );
 }
