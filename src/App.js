@@ -11,17 +11,22 @@ export default function App() {
   return (
     <div className="app">
       <h1>William Weber</h1>
-      <div className="menu">
-        <ul>
-          <li><div>About</div><div className="underline">About</div></li>
-          <li><div>Portfolio</div><div className="underline">Portfolio</div></li>
-          <li><div>Resume</div><div className="underline">Resume</div></li>
-        </ul>
+      <div className="separator">&nbsp;</div>
+      <div className="mainbox">
+        <div className="menu">
+          <ul>
+            <li><div>About</div><div className="underline">About</div></li>
+            <li><div>Portfolio</div><div className="underline">Portfolio</div></li>
+            <li><div>Resume</div><div className="underline">Resume</div></li>
+          </ul>
+        </div>
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<HomePage/>} />
+            <Route path="/:id" element={<UserPage/>} />
+          </Routes>
+        </div>
       </div>
-      <Routes>
-        <Route path="/" element={<HomePage/>} />
-        <Route path="/:id" element={<UserPage/>} />
-      </Routes>
     </div>
   )
 }
