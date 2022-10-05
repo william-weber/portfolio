@@ -1,10 +1,10 @@
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes, NavLink } from "react-router-dom"
 
 import logo from './logo.svg';
 import './App.css';
 
 import HomePage from "./pages/HomePage"
-import UserPage from "./pages/UserPage"
+import Portfolio from "./pages/Portfolio"
 
 
 export default function App() {
@@ -15,15 +15,21 @@ export default function App() {
       <div className="mainbox">
         <div className="menu">
           <ul>
-            <li><div>About</div><div className="underline">About</div></li>
-            <li><div>Portfolio</div><div className="underline">Portfolio</div></li>
-            <li><div>Resume</div><div className="underline">Resume</div></li>
+            <NavLink to="/">
+              <li><div>About</div><div className="underline">About</div></li>
+            </NavLink>
+            <NavLink to="/portfolio">
+              <li><div>Portfolio</div><div className="underline">Portfolio</div></li>
+            </NavLink>
+            <NavLink to="/resume">
+              <li><div>Resume</div><div className="underline">Resume</div></li>
+            </NavLink>
           </ul>
         </div>
         <div className="content">
           <Routes>
             <Route path="/" element={<HomePage/>} />
-            <Route path="/:id" element={<UserPage/>} />
+            <Route path="/portfolio" element={<Portfolio/>} />
           </Routes>
         </div>
       </div>

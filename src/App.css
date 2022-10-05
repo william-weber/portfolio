@@ -6,6 +6,11 @@
   align-items: center;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .app {
   width: 75%;
   justify-content: left;
