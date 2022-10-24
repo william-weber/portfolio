@@ -9,20 +9,19 @@ import Portfolio from "./pages/Portfolio"
 
 export default function App() {
   return (
-    <div className="app">
-      <h1>William Weber</h1>
-      <div className="separator">&nbsp;</div>
-      <div className="mainbox">
-        <div className="menu">
+    <div className="container mx-auto h-screen place-content-center bg-slate-800 text-slate-50 w-2/3 my-12 ring-1 ring-white/10 ring-inset">
+      <div className="font-mono text-xl subpixel-antialiased border-4 border-b-slate-400 p-2 border-t-yellow-50 border-l-yellow-50 border-r-slate-400 bg-blue-900">William Weber</div>
+      <div className="flex flex-row">
+        <div className="w-1/4">
           <ul>
             <NavLink to="/">
-              <li><div>About</div><div className="underline">About</div></li>
+              <li className="bg-indigo-800 hover:bg-amber-500 h-10"><div>About</div></li>
             </NavLink>
             <NavLink to="/portfolio">
-              <li><div>Portfolio</div><div className="underline">Portfolio</div></li>
+              <li className="bg-indigo-800 h-10"><div>Portfolio</div></li>
             </NavLink>
             <NavLink to="/resume">
-              <li><div>Resume</div><div className="underline">Resume</div></li>
+              <li className="bg-indigo-800 h-10"><div>Resume</div></li>
             </NavLink>
           </ul>
         </div>
